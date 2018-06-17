@@ -11,7 +11,7 @@ ms.pdf:	ms.md refs.bib
 	-V mathfont="Palatino" \
 	-V fontsize=12pt \
 	-V geometry:margin=1.1in \
-	-V linestretch=1.3 \
+	-V linestretch=1.25 \
 	--pdf-engine=xelatex \
 	--csl=journal-of-neurophysiology.csl \
 	-o ms.pdf
