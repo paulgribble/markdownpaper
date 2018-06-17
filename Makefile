@@ -8,6 +8,7 @@ ms.pdf:	ms.md refs.bib
 	--filter pandoc-citeproc \
 	-V papersize=letter \
 	-V mainfont="Palatino" \
+	-V mainfontoptions="Numbers=Lining" \
 	-V mathfont="Palatino" \
 	-V fontsize=12pt \
 	-V geometry:margin=1.1in \
