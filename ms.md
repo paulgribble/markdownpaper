@@ -28,6 +28,7 @@ keywords: motor adaptation, prediction error, P300, feedback related negativity,
 short_title: Prediction Error in Motor Adaptation
 date: June 10, 2018
 bibliography: refs.bib
+csl: journal-of-neurophysiology.csl
 ---
 
 \newpage

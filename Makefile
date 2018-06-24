@@ -3,18 +3,10 @@ all:	ms.pdf letter.pdf
 
 ms.pdf:	ms.md refs.bib
 	pandoc -s ms.md \
-	--template=preep_latex.tex \
+	--template=preep.tex \
 	--filter pandoc-crossref \
 	--filter pandoc-citeproc \
-	-V papersize=letter \
-	-V mainfont="Palatino" \
-	-V mainfontoptions="Numbers=Lining" \
-	-V mathfont="Palatino" \
-	-V fontsize=12pt \
-	-V geometry:margin=1.1in \
-	-V linestretch=1.25 \
 	--pdf-engine=xelatex \
-	--csl=journal-of-neurophysiology.csl \
 	-o ms.pdf
 
 default.BMI_letter = /Users/plg/github/LaTeX/BMI_letter/default.BMI_letter
