@@ -26,6 +26,8 @@ organization:
    address: New Haven, CT, USA
 keywords: motor adaptation, prediction error, P300, feedback related negativity, reward
 short_title: Prediction Error in Motor Adaptation
+acknowledgements: This work was supported by research grants to PLG from the Canadian Institutes of Health Research (CIHR) and the Natural Sciences and Engineering Council of Canada (NSERC).
+competing_interests: The authors declare no competing financial interests.
 date: June 10, 2018
 bibliography: refs.bib
 csl: journal-of-neurophysiology.csl
