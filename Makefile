@@ -2,10 +2,11 @@
 all:	ms.pdf letter.pdf
 
 preep_palatino.tex = /Users/plg/github/markdownpaper/preep_palatino.tex
+preep_helvetica.tex = /Users/plg/github/markdownpaper/preep_helvetica.tex
 
 ms.pdf:	ms.md refs.bib
 	pandoc -s ms.md \
-	--template=$(preep_palatino.tex) \
+	--template=$(preep_helvetica.tex) \
 	--filter pandoc-crossref \
 	--filter pandoc-citeproc \
 	--pdf-engine=xelatex \
