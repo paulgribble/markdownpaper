@@ -3,6 +3,7 @@ all:	ms.pdf letter.pdf
 
 preep_palatino.tex = /Users/plg/github/markdownpaper/preep_palatino.tex
 preep_helvetica.tex = /Users/plg/github/markdownpaper/preep_helvetica.tex
+preep_optima.tex = /Users/plg/github/markdownpaper/preep_optima.tex
 
 ms.pdf:	ms.md refs.bib
 	pandoc -s ms.md \
