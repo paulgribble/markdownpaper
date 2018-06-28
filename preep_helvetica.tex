@@ -9,8 +9,8 @@
 
 \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
 
-\setmainfont{Helvetica}
-\setmathfont(Digits,Latin,Greek){Helvetica}
+\setmainfont{Helvetica Neue}
+\setmathfont(Digits,Latin,Greek){Helvetica Neue}
 
 \usepackage[protrusion=true]{microtype}
 \usepackage{parskip}
@@ -43,10 +43,17 @@
 
 \setcounter{secnumdepth}{0}
 
-% set default figure placement to htbp
+
+% guarantee figures on their own page
 \makeatletter
-\def\fps@figure{htbp}
+\def\fps@figure{p!}
 \makeatother
+
+% guarantee 1 figure per page
+%\makeatletter
+%\@fpsep\textheight
+%\makeatother
+
 
 \date{$date$}
 
@@ -61,7 +68,6 @@
 \titlespacing{\subsubsection}{0pt}{0.5ex}{0ex}
 
 \setlength{\parskip}{2.0ex}
-
 
 
 \begin{document}
