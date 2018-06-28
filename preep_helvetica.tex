@@ -1,4 +1,3 @@
-
 \documentclass[12pt,letterpaper]{article}
 
 \usepackage{amssymb,amsmath}
@@ -85,15 +84,15 @@ $endfor$
 \bigskip
 \bigskip
 {\small
-\begin{itemize}[itemsep=0pt,leftmargin=*]
+\begin{itemize}[noitemsep,leftmargin=*]
 $for(organization)$
-\item [$organization.id$] $organization.name$, $organization.address$
+\item[$organization.id$] $organization.name$, $organization.address$
 $endfor$
 $for(author)$
-$if(author.email)$ \item[$$\ast$$] Corresponding author: $author.email$ $endif$
+$if(author.email)$\item[$$\ast$$] Corresponding author: $author.email$ $endif$
 $endfor$
 \end{itemize}
-\vspace{5.0ex}
+\vfill
 \textbf{Short Title}: $short_title$\\
 \vspace{2.0ex}
 \textbf{Keywords}: $keywords$\\
@@ -101,7 +100,7 @@ $endfor$
 $if(competing_interests)$\textbf{Competing interests}: $competing_interests$\\$endif$
 \vspace{2.0ex}
 $if(acknowledgements)$\textbf{Acknowledgements}: $acknowledgements$\\$endif$
-\vfill
+\vspace{2.0ex}
 $date$
 }
 \end{flushleft}
