@@ -4,10 +4,11 @@ all:	ms.pdf letter.pdf
 preep_palatino.tex = /Users/plg/github/markdownpaper/preep_palatino.tex
 preep_helvetica.tex = /Users/plg/github/markdownpaper/preep_helvetica.tex
 preep_optima.tex = /Users/plg/github/markdownpaper/preep_optima.tex
+preep_myriad.tex = /Users/plg/github/markdownpaper/preep_myriad.tex
 
 ms.pdf:	ms.md refs.bib
 	pandoc -s ms.md \
-	--template=$(preep_helvetica.tex) \
+	--template=$(preep_myriad.tex) \
 	--filter pandoc-crossref \
 	--filter pandoc-citeproc \
 	--pdf-engine=xelatex \
