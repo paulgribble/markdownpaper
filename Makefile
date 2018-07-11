@@ -8,7 +8,7 @@ preep_myriad.tex = /Users/plg/github/markdownpaper/preep_myriad.tex
 
 ms.pdf:	ms.md refs.bib
 	pandoc -s ms.md \
-	--template=$(preep_myriad.tex) \
+	--template=$(preep_helvetica.tex) \
 	--filter pandoc-crossref \
 	--filter pandoc-citeproc \
 	--pdf-engine=xelatex \
