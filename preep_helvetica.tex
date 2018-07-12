@@ -8,7 +8,7 @@
 \usepackage{mathspec}
 
 \setmainfont{Helvetica}
-\setmathfont(Digits,Latin,Greek){Helvetica}
+%\setmathfont(Digits,Latin,Greek){Palatino}
 
 \usepackage[protrusion=true]{microtype}
 \usepackage{parskip}
@@ -74,7 +74,7 @@
 
 \thispagestyle{empty}
 
-\setstretch{1.05}
+\setstretch{1.15}
 
 \begin{flushleft}
 {\Large
@@ -98,6 +98,7 @@ $for(author)$
 $if(author.email)$\item[$$\ast$$] Corresponding author: $author.email$ $endif$
 $endfor$
 \end{itemize}
+}
 \vfill
 \textbf{Short Title}: $short_title$\\
 \vspace{2.0ex}
@@ -107,11 +108,10 @@ $if(competing_interests)$\textbf{Competing interests}: $competing_interests$\\$e
 \vspace{2.0ex}
 $if(acknowledgements)$\textbf{Acknowledgements}: $acknowledgements$\\$endif$
 \vspace{2.0ex}
-$date$
-}
+{\small $date$}
 \end{flushleft}
 
-\setstretch{1.10}
+\setstretch{1.15}
 
 \justify
 
